@@ -1,5 +1,6 @@
 {
     "name": "@hashlips-lab/nft-erc721-collection-minting-dapp",
+    "homepage": "https://FreeVoicesDev.github.io/nftapp",
     "version": "0.0.0",
     "private": true,
     "devDependencies": {
@@ -15,6 +16,7 @@
         "core-js": "^3.0.0",
         "ethers": "^5.5.3",
         "file-loader": "^6.0.0",
+        "gh-pages": "^5.0.0",
         "hardhat-typechain": "^0.3.5",
         "keccak256": "^1.0.6",
         "merkletreejs": "^0.2.27",
@@ -36,6 +38,8 @@
         "dev-server": "encore dev-server",
         "dev": "encore dev",
         "watch": "encore dev --watch",
-        "build": "encore production --progress"
+        "build": "encore production --progress",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d public"
     }
 }
